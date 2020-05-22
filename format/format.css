@@ -1,0 +1,221 @@
+
+h1{
+    color: green;
+}
+
+html{
+    padding:10px;    
+}
+.container
+{
+    display: grid;
+    grid-template-columns: 16px auto;
+    grid-template-rows: 50px 16px auto;
+    grid-gap:10px;
+    border: 2px solid teal;
+    padding: 5px;
+    
+    
+}
+
+/* Month */
+    #month
+    {
+        border: 1px solid teal;
+        grid-column-start: 2;
+        grid-column-end:2;
+        margin-bottom: 5px;
+        margin-top:5px;
+
+        padding:5px;
+
+        display:flex;
+        justify-content:left;
+        align-items: center;
+    }
+
+    .mExpand
+    {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        grid-column-start: 1;
+        grid-row-start:1;
+        /*border: 1px solid teal;
+        margin-bottom: 5px;
+        margin-top:5px;*/
+    }
+
+    #openPopup
+    {
+        display: flex;
+        justify-content: rigth;
+        align-content: center;
+        width: 16px;
+
+        cursor: pointer;
+        margin-bottom: 5px;
+        margin-top:5px;
+        border: 1px solid teal;
+    }
+
+    #openPopup:hover
+    {
+        opacity:0.7;
+        background-color:teal;
+    }
+
+    .mgrid
+    {
+        display: none;
+        border: 1px solid black;
+        grid-column-start: 2;
+        grid-row-start:1;
+
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        align-content:center;
+        grid-gap: 5px;
+
+        padding: 10px;
+        
+    }
+    .mgrid > div
+    {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding:5px;
+        background-color:teal;
+        cursor:pointer
+    }
+    .mgrid >div:hover
+    {
+        opacity: 0.7;
+        background-color: palevioletred;
+    }
+
+
+/* DAYS */
+    .names
+    {
+        grid-column-start:2;
+        grid-row-start:2;
+
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        justify-items:center;
+        align-items:center;
+        
+    }
+        .names > div
+        {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding:5px;
+            background-color: grey;
+            
+            
+
+        }
+    #days
+    {
+        grid-column-start: 2;
+        grid-row-start:3;
+        border: 1px solid black;
+        margin: 5px;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        grid-template-rows:175px 175px 175px 175px 175px 175px;
+        
+
+    }
+    .day
+    {
+        border: 1px dotted black;
+        background-color: gray; 
+        /*opactiy:60%*/
+    }
+    .dayMBf
+    {
+        border: 1px dotted black;
+        background-color: rgb(77,77,77);
+        opacity: 90%; 
+
+    }
+    .dayMAfter
+    {
+        border: 1px dotted black;
+        background-color: rgb(77,77,77);
+        opacity: 90%;
+
+    }
+    .addTask
+    {
+        display: flex;
+        width: 20px;
+        length: 5px;
+         position: relative;
+         left: 10px;
+         top: 130px;
+        border: 1px solid red;
+        background-color: palevioletred;
+        padding: 5px;
+        
+        
+    }
+    
+    #week
+    {
+        grid-column-start: 2;
+        grid-row-start:3;
+        margin-left: 30px;
+        margin-right:30px;
+        margin-top:90px;
+        margin-bottom:90px;
+
+        display:none;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        grid-template-rows: 30px auto;
+        border: 1px solid orangered;
+        background-color: grey;
+        z-index: 100;
+        /*opactiy: 100%*/
+
+    }
+    #week > div{ border: 1px dotted orangered;}
+    .d
+    {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(85,85,85);
+    }
+
+/* Week Expand */
+    #wExpand
+    {
+        grid-row-start: 3;
+        display:grid;
+        margin-top:5px;
+        grid-template-rows: 175px 175px 175px 175px 175px 175px;
+        
+    }
+    #wExpand > div
+    {
+        cursor:pointer;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: grey;
+        border: 1px dotted black;
+        
+
+    }
+    #wExpand > div:hover
+    {
+        opacity: 0.7;
+        background-color: teal;
+    }
+
+
+}
